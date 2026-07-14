@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隐私政策 — New API</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #0d1117;
+    color: #c9d1d9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.75;
+    font-size: 15px;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .brand-dot {
+    width: 10px; height: 10px;
+    background: #58a6ff;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .brand h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #f0f6fc;
+    letter-spacing: -0.3px;
+  }
+  .subtitle {
+    color: #8b949e;
+    font-size: 13px;
+    margin-bottom: 32px;
+  }
+  .updated {
+    display: inline-block;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-size: 12px;
+    color: #8b949e;
+    margin-bottom: 36px;
+  }
+  h2 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #f0f6fc;
+    margin: 36px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #21262d;
+  }
+  h2:first-of-type { margin-top: 8px; }
+  p {
+    margin-bottom: 14px;
+    color: #c9d1d9;
+  }
+  strong { color: #e6edf3; }
+  ul {
+    margin: 8px 0 18px 20px;
+    color: #c9d1d9;
+  }
+  li { margin-bottom: 8px; }
+  a {
+    color: #58a6ff;
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 20px;
+    font-size: 14px;
+  }
+  .data-table th, .data-table td {
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 1px solid #21262d;
+  }
+  .data-table th {
+    color: #e6edf3;
+    font-weight: 600;
+    font-size: 13px;
+    background: #161b22;
+  }
+  .footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid #21262d;
+    color: #8b949e;
+    font-size: 13px;
+  }
+  .footer a { color: #8b949e; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="brand">
+    <div class="brand-dot"></div>
+    <h1>New API</h1>
+  </div>
+  <p class="subtitle">AI API 网关服务 &middot; stevetoken.kai.com</p>
+  <div class="updated">生效日期：2026 年 7 月 10 日</div>
+
+  <h2>1. 引言</h2>
+  <p>
+    New API（stevetoken.kai.com，以下简称"我们"）深知个人信息对您的重要性。本隐私政策旨在向您说明我们如何收集、使用、存储和保护您的个人信息。使用本服务即表示您同意本隐私政策所述的数据处理方式。
+  </p>
+
+  <h2>2. 我们收集的信息</h2>
+  <p>我们遵循数据最小化原则，仅收集为提供 API 网关服务所必需的信息：</p>
+  <table class="data-table">
+    <thead>
+      <tr><th>数据类别</th><th>具体内容</th><th>收集目的</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>账户信息</td>
+        <td>电子邮箱、用户名、密码哈希</td>
+        <td>账户创建与身份识别</td>
+      </tr>
+      <tr>
+        <td>交易记录</td>
+        <td>充值金额、支付渠道、时间戳</td>
+        <td>财务核算与账单查询</td>
+      </tr>
+      <tr>
+        <td>API 调用元数据</td>
+        <td>请求量、模型标识、Token 消耗量</td>
+        <td>用量统计与计费</td>
+      </tr>
+      <tr>
+        <td>技术日志</td>
+        <td>IP 地址、请求时间戳、User-Agent</td>
+        <td>安全防护与故障排查</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    <strong>我们不会收集 API 请求体内容（prompt 与 completion）。</strong>您的对话内容仅通过我们的网关实时转发至后端模型提供商，不在我们服务器上落地存储。
+  </p>
+
+  <h2>3. 信息的使用</h2>
+  <p>我们收集的信息仅用于以下用途：</p>
+  <ul>
+    <li><strong>服务提供：</strong>验证身份、处理充值、统计用量、路由 API 请求。</li>
+    <li><strong>安全保障：</strong>检测和防止欺诈、滥用及未授权访问。</li>
+    <li><strong>客户支持：</strong>响应用户的咨询、投诉及账户相关问题。</li>
+    <li><strong>服务改进：</strong>基于聚合的匿名统计数据优化系统性能。</li>
+  </ul>
+  <p>我们不会将您的个人信息用于自动化决策或用户画像，也不会将其出售给第三方。</p>
+
+  <h2>4. 信息的共享与披露</h2>
+  <p>我们仅在以下情形中与第三方共享您的信息：</p>
+  <ul>
+    <li><strong>后端模型提供商：</strong>当您发起 API 请求时，您的 prompt 内容将实时转发给对应的模型提供商（如 OpenAI、Anthropic 等），以完成模型推理。这些提供商有各自的隐私与数据处理政策。</li>
+    <li><strong>支付服务商：</strong>处理您的充值付款时，交易信息将传递给支付网关完成结算。</li>
+    <li><strong>法律要求：</strong>依法向司法或行政机构提供必要的账户信息。</li>
+  </ul>
+  <p>除此之外，我们不会向其他任何第三方出售、出租或分享您的个人信息。</p>
+
+  <h2>5. 数据存储与安全</h2>
+  <p>
+    您的账户信息与交易记录存储在加密数据库中。我们采用行业标准的安全措施保护您的数据，包括传输层加密（TLS）、访问控制及定期安全审计。
+  </p>
+  <ul>
+    <li><strong>API 请求日志</strong>（仅含元数据，不含对话内容）保留不超过 <strong>24 小时</strong>，用于故障排查与滥用监控。</li>
+    <li><strong>账户数据</strong>在账户存续期间保留。账户注销后，个人信息将在 30 天内删除（法律法规另有要求的除外）。</li>
+  </ul>
+
+  <h2>6. 您的权利</h2>
+  <p>根据适用法律，您对自身信息享有以下权利：</p>
+  <ul>
+    <li><strong>访问与导出：</strong>您可随时登录控制台查看余额、调用明细及基本账户信息。</li>
+    <li><strong>更正：</strong>如账户信息有误，您可通过控制台自行修改或联系客服协助。</li>
+    <li><strong>删除：</strong>您可申请注销账户，我们将在验证身份后删除您的个人信息。</li>
+    <li><strong>撤回同意：</strong>您可随时停止使用本服务。对于非必要的 Cookie 或跟踪（本服务不使用），您有权拒绝。</li>
+  </ul>
+
+  <h2>7. Cookie 与跟踪技术</h2>
+  <p>
+    New API 网站本身<strong>不使用任何第三方跟踪脚本或广告 Cookie</strong>。我们仅使用会话必需的 Cookie 维护登录状态，这些 Cookie 在您登出或关闭浏览器后失效。
+  </p>
+
+  <h2>8. 未成年人保护</h2>
+  <p>
+    本服务不面向 18 周岁以下的未成年人。我们不会故意收集未成年人的个人信息。如发现误收集，将立即删除。
+  </p>
+
+  <h2>9. 政策更新</h2>
+  <p>
+    我们可能不时更新本隐私政策。重大变更将通过邮件或站内通知告知。更新后的政策发布于本页面，届时生效日期将更新。建议您定期查阅。
+  </p>
+
+  <h2>10. 联系方式</h2>
+  <p>如对本隐私政策有任何疑问、行使您的数据权利或报告安全问题，请通过以下方式联系我们：</p>
+  <ul>
+    <li>邮箱：<a href="mailto:support@kai.com">support@kai.com</a></li>
+    <li>官网：<a href="https://stevetoken.kai.com">stevetoken.kai.com</a></li>
+  </ul>
+  <p>我们将在 5 个工作日内回复您的请求。</p>
+
+  <div class="footer">
+    &copy; 2026 New API &middot; stevetoken.kai.com &middot;
+    <a href="/terms">服务条款</a> &middot;
+    <a href="/privacy">隐私政策</a>
+  </div>
+
+</div>
+</body>
+</html>

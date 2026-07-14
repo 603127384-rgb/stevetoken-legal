@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>定价 — Kai-team API</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{background:#0d1117;color:#c9d1d9;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.6;font-size:15px}
+  .page{max-width:900px;margin:0 auto;padding:48px 24px 80px}
+  h1{font-size:28px;color:#f0f6fc;margin-bottom:8px}
+  h2{font-size:20px;color:#f0f6fc;margin:32px 0 12px;padding-bottom:8px;border-bottom:1px solid #21262d}
+  h3{font-size:16px;color:#e6edf3;margin:20px 0 8px}
+  .sub{color:#8b949e;margin-bottom:24px}
+  .note{background:#161b22;border:1px solid #30363d;border-radius:6px;padding:12px 16px;margin:16px 0;color:#8b949e;font-size:13px}
+  table{width:100%;border-collapse:collapse;margin:16px 0}
+  th{text-align:left;padding:10px 12px;border-bottom:1px solid #30363d;color:#8b949e;font-size:13px;font-weight:500}
+  td{padding:10px 12px;border-bottom:1px solid #21262d}
+  .price{color:#58a6ff;font-weight:600;white-space:nowrap}
+  .tag{display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:500;margin-left:6px}
+  .tag-hot{background:rgba(248,81,73,0.15);color:#f85149}
+  .tag-pop{background:rgba(63,185,80,0.15);color:#3fb950}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:20px 0}
+  .card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:20px;text-align:center}
+  .card .name{font-size:18px;font-weight:600;color:#f0f6fc;margin-bottom:4px}
+  .card .price{font-size:28px;margin:12px 0 4px}
+  .card .unit{color:#8b949e;font-size:13px;margin-bottom:12px}
+  .card .desc{color:#8b949e;font-size:13px;line-height:1.5}
+  .card.featured{border-color:#58a6ff;box-shadow:0 0 0 1px #58a6ff}
+  .faq dt{font-weight:600;color:#e6edf3;margin-top:16px}
+  .faq dd{color:#8b949e;margin:4px 0 16px 0}
+  a{color:#58a6ff}
+</style>
+</head>
+<body>
+<div class="page">
+<h1>定价</h1>
+<p class="sub">透明、简单的 API Token 定价。按用量购买，无隐藏费用。</p>
+
+<div class="grid">
+  <div class="card">
+    <div class="name">入门包</div>
+    <div class="price">$9.99</div>
+    <div class="unit">10M Tokens</div>
+    <div class="desc">适合试用和轻量使用<br>所有模型通用</div>
+  </div>
+  <div class="card featured">
+    <div class="name">开发者包 <span class="tag tag-pop">推荐</span></div>
+    <div class="price">$39.99</div>
+    <div class="unit">50M Tokens</div>
+    <div class="desc">适合日常开发和测试<br>性价比最高</div>
+  </div>
+  <div class="card">
+    <div class="name">专业包</div>
+    <div class="price">$149.99</div>
+    <div class="unit">200M Tokens</div>
+    <div class="desc">适合重度用户<br>单 Token 成本更低</div>
+  </div>
+  <div class="card">
+    <div class="name">企业包</div>
+    <div class="price">$699.99</div>
+    <div class="unit">1,000M Tokens</div>
+    <div class="desc">适合 API 集成客户<br>大批量优惠</div>
+  </div>
+</div>
+
+<div class="note">💡 所有套餐均支持全部模型，Token 不区分模型类型。购买后发送 API Key，用完可续费。</div>
+
+<h2>模型参考价格</h2>
+<p class="sub">以下为各模型每百万 Token 的参考消耗，帮助您估算用量。</p>
+
+<table>
+<tr><th>模型</th><th>输入 ($/M)</th><th>输出 ($/M)</th><th>说明</th></tr>
+<tr><td>DeepSeek-V4-Flash</td><td class="price">$0.14</td><td class="price">$0.28</td><td>快速响应，适合对话</td></tr>
+<tr><td>DeepSeek-V3.2</td><td class="price">$0.28</td><td class="price">$0.41</td><td>高性价比旗舰</td></tr>
+<tr><td>GLM-5.2</td><td class="price">$0.83</td><td class="price">$3.86</td><td>国产旗舰，编程强</td></tr>
+<tr><td>Kimi-K2.7-Code</td><td class="price">$0.90</td><td class="price">$3.72</td><td>编程专用</td></tr>
+<tr><td>DeepSeek-V4-Pro</td><td class="price">$1.66</td><td class="price">$3.31</td><td>最强旗舰</td></tr>
+</table>
+
+<div class="note">⚠️ 以上为参考价格，实际扣费按模型实际输入输出 token 量计算。一次购买 = 一个 Token 池，跨模型通用。</div>
+
+<h2>常见问题</h2>
+<dl class="faq">
+<dt>如何购买？</dt>
+<dd>在 Waffo 商店选择套餐完成支付，我们会通过邮件发送 API Key。</dd>
+<dt>Token 会过期吗？</dt>
+<dd>不会。购买的 Token 永久有效，用完为止。</dd>
+<dt>支持哪些模型？</dt>
+<dd>DeepSeek 全系列、GLM 系列、Kimi 系列、MiniMax 等 10+ 模型，持续增加中。</dd>
+<dt>支持退款吗？</dt>
+<dd>购买后 7 天内未使用可全额退款。已使用的部分按比例扣除。</dd>
+<dt>有免费额度吗？</dt>
+<dd>新用户注册赠送 1M Token 试用额度。</dd>
+<dt>如何查看剩余额度？</dt>
+<dd>登录控制台 → 令牌管理，可实时查看剩余 Token。</dd>
+</dl>
+
+</div>
+</body>
+</html>

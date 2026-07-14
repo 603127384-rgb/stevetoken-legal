@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>服务条款 — New API</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #0d1117;
+    color: #c9d1d9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.75;
+    font-size: 15px;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .brand-dot {
+    width: 10px; height: 10px;
+    background: #58a6ff;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .brand h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #f0f6fc;
+    letter-spacing: -0.3px;
+  }
+  .subtitle {
+    color: #8b949e;
+    font-size: 13px;
+    margin-bottom: 32px;
+  }
+  .updated {
+    display: inline-block;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-size: 12px;
+    color: #8b949e;
+    margin-bottom: 36px;
+  }
+  h2 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #f0f6fc;
+    margin: 36px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #21262d;
+  }
+  h2:first-of-type { margin-top: 8px; }
+  p {
+    margin-bottom: 14px;
+    color: #c9d1d9;
+  }
+  strong { color: #e6edf3; }
+  ul {
+    margin: 8px 0 18px 20px;
+    color: #c9d1d9;
+  }
+  li { margin-bottom: 8px; }
+  a {
+    color: #58a6ff;
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+  .footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid #21262d;
+    color: #8b949e;
+    font-size: 13px;
+  }
+  .footer a { color: #8b949e; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="brand">
+    <div class="brand-dot"></div>
+    <h1>New API</h1>
+  </div>
+  <p class="subtitle">AI API 网关服务 &middot; stevetoken.kai.com</p>
+  <div class="updated">生效日期：2026 年 7 月 10 日</div>
+
+  <h2>1. 服务概述</h2>
+  <p>
+    New API（以下简称"本服务"）是由 stevetoken.kai.com 运营的 AI API 网关平台。本服务向注册用户提供统一的 API Token 购买与管理服务，用户可通过本平台获取对主流大语言模型（LLM）API 的调用额度。
+  </p>
+  <p>
+    本服务本质为 <strong>API Token 分销与网关代理</strong>：用户购买 Token 额度后，通过本平台提供的统一端点发起 API 请求，本平台负责将请求路由至后端模型提供商并返回响应。用户无需分别对接各个模型提供商的独立接口。
+  </p>
+  <ul>
+    <li>用户须年满 18 周岁或在其所在司法管辖区达到法定签约年龄。</li>
+    <li>注册即表示您同意本条款的全部内容。如不同意，请勿使用本服务。</li>
+  </ul>
+
+  <h2>2. 账户与 API Token</h2>
+  <p>
+    用户注册后将获得唯一的 API Key，用于鉴权和用量统计。用户对自身 API Key 下的所有活动负全部责任，包括但不限于 API 调用内容、额度消耗及由此产生的费用。
+  </p>
+  <ul>
+    <li>API Key 为机密信息，用户应妥善保管。因 Key 泄露导致的一切损失由用户自行承担。</li>
+    <li>本服务保留对异常调用模式（包括但不限于滥用、抓取、恶意攻击）进行限流、暂停或终止服务的权利。</li>
+  </ul>
+
+  <h2>3. 可接受使用</h2>
+  <p>用户不得利用本服务从事以下活动：</p>
+  <ul>
+    <li>生成或传播违法、侵权、色情、暴力、仇恨或骚扰性内容；</li>
+    <li>违反任何后端模型提供商的 Acceptable Use Policy；</li>
+    <li>反向工程、抓取或未授权访问本服务的系统与接口；</li>
+    <li>以自动化方式大规模创建账户或绕过敏频限制。</li>
+  </ul>
+  <p>一旦发现违反上述规定，本服务有权立即暂停或终止相关账户，且不予退款。</p>
+
+  <h2>4. 费用、充值与退款政策</h2>
+  <p>
+    本服务采用预付费充值模式：用户通过支持的支付渠道购买 API 额度（以 Token 或调用次数计），实际消耗按各模型的官方定价折算扣除。
+  </p>
+  <ul>
+    <li><strong>充值：</strong>充值金额即时到账，不可转让，不可兑换为现金。</li>
+    <li><strong>退款：</strong>一般情况下，已充值的额度不予退款。以下情况除外：<br>
+      （a）因本服务系统故障导致额度未到账且超过 72 小时未恢复；<br>
+      （b）本服务主动终止运营，将按剩余未消耗额度比例退还。
+    </li>
+    <li>用户可随时在控制台查看余额及调用明细。</li>
+  </ul>
+
+  <h2>5. 免责声明</h2>
+  <p>
+    本服务按"现状"提供，不作任何明示或默示的保证，包括但不限于可用性、准确性、特定用途适用性及非侵权保证。
+  </p>
+  <ul>
+    <li><strong>模型输出：</strong>AI 模型生成的内容由后端模型提供商产生，本服务不保证其准确性、完整性或适用性。用户将 AI 输出用于生产环境、决策或其他重要场景时，应自行评估并承担全部风险。</li>
+    <li><strong>服务可用性：</strong>本服务依赖上游模型提供商的可用性。因上游故障、网络中断、不可抗力或定期维护导致的服务中断，本服务不承担责任。</li>
+    <li><strong>间接损失：</strong>本服务在任何情况下均不对利润损失、数据丢失、业务中断或任何间接、附带、特殊或后果性损害承担责任，无论该损害是否可预见。</li>
+  </ul>
+
+  <h2>6. 数据使用与隐私</h2>
+  <p>
+    我们仅收集为提供服务所必需的最小数据集：账户信息（邮箱、用户名）、充值记录及 API 调用元数据（请求量统计，不含请求体内容）。具体数据处理方式请参阅我们的<a href="/privacy">隐私政策</a>。
+  </p>
+  <p>
+    用户通过本平台发起的 API 请求内容（prompt 与 completion）不会被本服务长期存储，仅用于实时路由转发。请求日志保留不超过 24 小时，用于故障排查。
+  </p>
+
+  <h2>7. 条款变更</h2>
+  <p>
+    本服务保留随时修改本条款的权利。重大变更将通过邮件或站内通知方式告知用户。变更发布后继续使用本服务即视为接受新条款。如您不同意变更内容，应立即停止使用并联系客服处理账户余额。
+  </p>
+
+  <h2>8. 联系方式</h2>
+  <p>
+    如有任何关于本服务条款的问题，请通过以下方式联系我们：
+  </p>
+  <ul>
+    <li>邮箱：<a href="mailto:support@kai.com">support@kai.com</a></li>
+    <li>官网：<a href="https://stevetoken.kai.com">stevetoken.kai.com</a></li>
+  </ul>
+
+  <div class="footer">
+    &copy; 2026 New API &middot; stevetoken.kai.com &middot;
+    <a href="/terms">服务条款</a> &middot;
+    <a href="/privacy">隐私政策</a>
+  </div>
+
+</div>
+</body>
+</html>
